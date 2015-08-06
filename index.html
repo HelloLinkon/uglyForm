@@ -1,100 +1,268 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Ugly Form</title>
-	<!--style & Java Sripts-->
-	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-pink.min.css">
-	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" type="text/css" href="style/style.css">
+<!doctype html><html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ugly Form</title>
 
-<style>
-.back {
-	background: url('images/back.jpg');
-	background-size: cover;
-	height: 768px;
-	position: fixed;
-	width: 100%;
-	-webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-}
-.layout-transparent {
-	position: fixed;
-	top: 0;
-	left: 0;
-}
-p {
-    font-size: 1.2em;
-    letter-spacing: 0;
-    margin: 0 0 16px;
-    color: white;
-    text-shadow: 1px 1px black;
-    font-weight: inherit;
-		text-align: justify;
-		margin: 0 auto;
-}
-.layout-transparent .mdl-layout__header,
-.layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: white;
-}
-</style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="./index_files/css" rel="stylesheet" type="text/css">
+    <link href="./index_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/uniform.default.css" rel="stylesheet" type="text/css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="./index_files/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
+    <link href="./index_files/plugins.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/layout.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/default.css" rel="stylesheet" type="text/css" id="style_color">
+    <link href="./index_files/custom.css" rel="stylesheet" type="text/css">
 
-</head>
-<body>
-	<div class="back">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
 
-	</div>
-<div class="layout-transparent mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--transparent">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Ugly Form</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-  	<h1 id="main_title" align="center">UglyForm</h1>
+    }
+    </style>
 
-  	<div class="demo-grid-1 mdl-grid">
-	  <div class="mdl-cell mdl-cell--3-col"></div>
-	  <div class="mdl-cell mdl-cell--6-col">
-	  	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </head>
 
-	  </div>
-	  <div class="mdl-cell mdl-cell--3-col"></div>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout  mdl-layout--fixed-header mdl-js-layout">
+    <header class="mdl-layout__header  mdl-color--primary">
+        <div class="mdl-layout mdl-color--primary-dark">
+          <header class="mdl-layout__header mdl-layout__header">
+            <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <span class="mdl-layout-title">Ugly Form</span>
+              <!-- Add spacer, to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation -->
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+              </nav>
+            </div>
+          </header>
+          <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+          </div>
+        </div>
 
-	</div>
-	<div id=btn>
-		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-	 Getting Started
-	</button>
-	</div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#overview" class="mdl-layout__tab is-active">Home</a>
+          <a href="#features" class="mdl-layout__tab">Get Started</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
 
+                  <style>
+                  .mdl-layout {background: url('images/back.jpg') center / cover;}
 
-  </main>
+                    </style>
+        </section>
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+              <h4 class="mdl-cell mdl-cell--12-col">Ugly Form</h4>
+              <div class="demo-grid-1 mdl-grid">
+          	  <div class="mdl-cell mdl-cell--3-col"></div>
+          	  <div class="mdl-cell mdl-cell--12-col">
+          	  	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+          	  </div>
+          	  <div class="mdl-cell mdl-cell--3-col"></div>
+
+            </div>
+
+            <div class="mdl-card__actions mdl-card--border">
+  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    View Updates
+  </a>
 </div>
-</body>
+          </div>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
+            <i class="material-icons">more_vert</i>
+          </button>
+        </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="features">
+            <div class="demo-container mdl-grid">
+              <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+              <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                <div class="col-md-6 ">
+                  <!-- BEGIN SAMPLE FORM PORTLET-->
+                  <div class="portlet light">
+                    <div class="portlet-body form">
+                      <form role="form">
+                        <div class="form-body">
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 1</label>
+                            <span class="help-block">Question 1 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 2</label>
+                            <span class="help-block">Question 2 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 3</label>
+                            <span class="help-block">Question 3 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 4</label>
+                            <span class="help-block">Question 4 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 5</label>
+                            <span class="help-block">Question 5 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 6</label>
+                            <span class="help-block">Question 6 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 7</label>
+                            <span class="help-block">Question 7 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 8</label>
+                            <span class="help-block">Question 8 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 9</label>
+                            <span class="help-block">Question 9 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 10</label>
+                            <span class="help-block">Question 10 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 11</label>
+                            <span class="help-block">Question 11 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 12</label>
+                            <span class="help-block">Question 12 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 13</label>
+                            <span class="help-block">Question 13 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 14</label>
+                            <span class="help-block">Question 14 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 15</label>
+                            <span class="help-block">Question 15 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 16</label>
+                            <span class="help-block">Question 16 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 17</label>
+                            <span class="help-block">Question 17 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 18</label>
+                            <span class="help-block">Question 18 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 19</label>
+                            <span class="help-block">Question 19 help text(if any)...</span>
+                          </div>
+                          <div class="form-group form-md-line-input form-md-floating-label">
+                            <input type="text" class="form-control" id="form_control_1">
+                            <label for="form_control_1">Question 20</label>
+                            <span class="help-block">Question 20 help text(if any)...</span>
+                          </div>
+                        </div>
+                        <div class="form-actions noborder">
+                          <button type="button" class="btn blue">Submit</button>
+                          <button type="button" class="btn default">Cancel</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="material.min.js"></script>
+    <div class="scroll-to-top" style="display: none;">
+    	<i class="icon-arrow-up"></i>
+    </div>
+    <script src="./index_files/jquery.min.js" type="text/javascript"></script>
+    <script src="./index_files/jquery-migrate.min.js" type="text/javascript"></script>
+    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+    <script src="./index_files/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="./index_files/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./index_files/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+    <script src="./index_files/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="./index_files/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="./index_files/jquery.cokie.min.js" type="text/javascript"></script>
+    <script src="./index_files/jquery.uniform.min.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+    <script src="./index_files/metronic.js" type="text/javascript"></script>
+    <script src="./index_files/layout.js" type="text/javascript"></script>
+    <script src="./index_files/demo.js" type="text/javascript"></script>
+    <script>
+    jQuery(document).ready(function() {
+       // initiate layout and plugins
+       Metronic.init(); // init metronic core components
+    Layout.init(); // init current layout
+    Demo.init(); // init demo features
+    });
+    </script>
+  </body>
 </html>
